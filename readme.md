@@ -34,8 +34,13 @@ This paper proposes a Dynamic Function Market Maker (DFMM) protocol that address
 
 ### 7. Coexisting Exchange Platforms: Limit Order Books and Automated Market Makers
 
-More and more decentralized exchanges (DEXs) use Constant Function Market Makers (CFMMs)—simple algorithms that set trade prices. We study a model where a centralized exchange (CEX) and a DEX run side by side. Traders can be informed or uninformed and choose where to trade.
-
-First, we look at how adding a DEX with a CFMM affects liquidity and costs from informed trading (adverse selection). We find that the DEX can actually improve liquidity on the CEX.
-
-Next, we create a formula to measure profits for liquidity providers on the DEX when some traders have better information. Just like in traditional markets, informed traders hurt profits, but uninformed (noise) traders help. We then explore how market makers decide how much liquidity to provide to the CFMM.
+A growing number of blockchain-based decentralized exchanges (DEX) have adopted Constant Function Market Makers (CFMMs)—a single-function algorithm to determine the execution
+price for a trade. We build a model of coexisting exchanges where a centralized exchange (CEX)
+with the traditional order-book mechanism operates in parallel with a DEX with the CFMM.
+Traders are either informed or uninformed and endogenously choose their trading venue. We
+first investigate how the arrival of the CFMM affects an adverse selection cost for market makers
+and liquidity on both exchanges. Our result indicates that liquidity on the DEX has a positive
+spillover effect on CEX liquidity. Secondly, we derive a profit function for liquidity providers
+using the CFMM when there is an asymmetric information problem. As in the traditional market microstructure theory, informed trading imposes an adverse selection cost, while uninformed
+noise trading adds value to liquidity pools. We analyze the market makers’ equilibrium behavior
+and endogenize the amount of liquidity supplied via the CFMM.
