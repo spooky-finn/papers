@@ -31,3 +31,11 @@ This work introduces dynamic curves for AMMs, leveraging market price oracles to
 This paper proposes a Dynamic Function Market Maker (DFMM) protocol that addresses inventory risk management through data aggregation and order routing. The DFMM ensures price synchronization with external markets, optimizes inventory risk via arbitrageurs, and incorporates protective buffers to mitigate market volatility. The protocol offers a fully automated, decentralized solution for efficient and stable market making.
 
 [Download full](/amm/6_Dynamic%20Function%20Market%20Maker%20(DFMM).pdf)
+
+### 7. Coexisting Exchange Platforms: Limit Order Books and Automated Market Makers
+
+More and more decentralized exchanges (DEXs) use Constant Function Market Makers (CFMMs)—simple algorithms that set trade prices. We study a model where a centralized exchange (CEX) and a DEX run side by side. Traders can be informed or uninformed and choose where to trade.
+
+First, we look at how adding a DEX with a CFMM affects liquidity and costs from informed trading (adverse selection). We find that the DEX can actually improve liquidity on the CEX.
+
+Next, we create a formula to measure profits for liquidity providers on the DEX when some traders have better information. Just like in traditional markets, informed traders hurt profits, but uninformed (noise) traders help. We then explore how market makers decide how much liquidity to provide to the CFMM.
